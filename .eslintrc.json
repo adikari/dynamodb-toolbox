@@ -4,7 +4,10 @@
       "node": true,
       "jest": true
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
       "ecmaVersion": 2018,
       "sourceType": "module"
@@ -23,11 +26,8 @@
           "error",
           "never"
       ],
-      "indent": [
-        "error",
-        2,
-        { "SwitchCase": 1, "flatTernaryExpressions": true }
-      ]
+      "no-unused-vars": 0,
+      "no-dupe-class-members": 0
   },
   "globals": {
       "expect": true,
